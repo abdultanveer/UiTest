@@ -13,4 +13,10 @@ public class MainPresenter implements MainContract.Presenter {//1 --- //5
         view.setText("abdul");//8b
 
     }
+
+    @Override
+    public void listItemClicked(String name) {
+        //hey ms view show a toast
+        view.showToast("presenter:"+name);
+    }
 }

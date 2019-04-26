@@ -7,6 +7,8 @@ public interface MainContract {//2
      */
     interface View{//2a
         public void setText(String message);//3a
+
+        void showToast(String name);
     }
 
     /**
@@ -14,6 +16,8 @@ public interface MainContract {//2
      */
     interface Presenter{//2b
         public  void onButtonClicked();//3b
+
+        void listItemClicked(String name);
     }
 
 }

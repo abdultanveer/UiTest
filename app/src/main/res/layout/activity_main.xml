@@ -27,7 +27,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginBottom="36dp"
         android:onClick="clickHandler"
         android:text="Login"
         app:layout_constraintBottom_toTopOf="@+id/textViewResult"
@@ -38,15 +37,13 @@
         android:id="@+id/textViewResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="54dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/countrieslistview"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="@+id/buttonLogin"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
-    <ListView
+    <!--<ListView
         android:id="@+id/countrieslistview"
         android:entries="@array/countries"
         android:layout_width="0dp"
@@ -60,5 +57,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewResult" />
+-->
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="390dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult"></android.support.v7.widget.RecyclerView>
 </android.support.constraint.ConstraintLayout>

@@ -15,11 +15,11 @@ public class TodoDatabaseOpenHelper extends SQLiteOpenHelper {
     private static final String COMMA_SEP = ",";
     //create table tasks(_id integer primary key, taskid text, title text, details text)
     private static final String SQL_CREATE_ENTRIES =
-            "CREATE TABLE " + FeedReaderContract.FeedEntry.TABLE_NAME + " (" +
-                    FeedReaderContract.FeedEntry._ID + " INTEGER PRIMARY KEY," +
-                    FeedReaderContract.FeedEntry.COLUMN_NAME_ENTRY_ID + TEXT_TYPE + COMMA_SEP +
-                    FeedReaderContract.FeedEntry.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
-                    FeedReaderContract.FeedEntry.COLUMN_NAME_DETAILS+TEXT_TYPE+" )";
+            "CREATE TABLE " + FeedReaderContract.TaskEntry.TABLE_NAME + " (" +
+                    FeedReaderContract.TaskEntry._ID + " INTEGER PRIMARY KEY," +
+                    FeedReaderContract.TaskEntry.COLUMN_NAME_ENTRY_ID + TEXT_TYPE + COMMA_SEP +
+                    FeedReaderContract.TaskEntry.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
+                    FeedReaderContract.TaskEntry.COLUMN_NAME_DETAILS+TEXT_TYPE+" )";
 
 
     public static final String DATABASE_NAME = "tasks.db";
@@ -27,13 +27,13 @@ public class TodoDatabaseOpenHelper extends SQLiteOpenHelper {
 
 
     public TodoDatabaseOpenHelper(Context context) {
-        super(context, DATABASE_NAME, null,DATABASE_VERSION);
+        super(context, DATABASE_NAME, null,DATABASE_VERSION); //creates a db
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         //this method gets called for the first time when db is created and its tables need to be created
-        db.execSQL(SQL_CREATE_ENTRIES);
+        db.execSQL(SQL_CREATE_ENTRIES); //creates a table
 
     }
 

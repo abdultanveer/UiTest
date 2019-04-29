@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.uitest.R;
 import com.example.uitest.data.Task;
@@ -26,6 +27,8 @@ public class AddEditTaskActivity extends AppCompatActivity {
         switch (view.getId()){
             case R.id.buttonGet:
                 Log.i(TAG,"getting data from db");
+                TextView res = findViewById(R.id.textViewDbresult);
+                res.setText(operations.readRow());
                 break;
             case R.id.buttonSave:
                 Log.i(TAG,"saving data to db");

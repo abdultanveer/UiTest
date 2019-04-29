@@ -1,4 +1,4 @@
-package com.example.uitest;
+package com.example.uitest.main;
 
 public interface MainContract {//2
 

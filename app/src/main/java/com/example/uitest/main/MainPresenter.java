@@ -1,4 +1,4 @@
-package com.example.uitest;
+package com.example.uitest.main;
 
 public class MainPresenter implements MainContract.Presenter {//1 --- //5
 

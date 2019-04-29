@@ -1,4 +1,4 @@
-package com.example.uitest;
+package com.example.uitest.main;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -7,7 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.example.uitest.R;
 
 import java.util.LinkedList;
 

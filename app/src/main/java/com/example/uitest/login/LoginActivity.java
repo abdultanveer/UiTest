@@ -21,11 +21,11 @@ public class LoginActivity extends AppCompatActivity  implements LoginContract.V
 
     public void handleClick(View view) {
         //1. hey mr presenter someone clicked a button on me what should i do
-        presenter.buttonClicked();
+        presenter.buttonClicked();//1
     }
 
     @Override
-    public void showAToast(String message) {
+    public void showAToast(String message) {//7
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

@@ -5,6 +5,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.Scanner;
+
 /**
  * this class creates a db and its tables
  */
@@ -20,6 +22,8 @@ public class TodoDatabaseOpenHelper extends SQLiteOpenHelper {
                     FeedReaderContract.TaskEntry.COLUMN_NAME_ENTRY_ID + TEXT_TYPE + COMMA_SEP +
                     FeedReaderContract.TaskEntry.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
                     FeedReaderContract.TaskEntry.COLUMN_NAME_DETAILS+TEXT_TYPE+" )";
+
+
 
 
     public static final String DATABASE_NAME = "tasks.db";

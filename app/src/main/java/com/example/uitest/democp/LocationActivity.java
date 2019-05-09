@@ -176,6 +176,7 @@ public class LocationActivity extends AppCompatActivity {
 
     @SuppressWarnings("MissingPermission")
     private void getLastLocation() {
+       // String json = "{\n    \"fruit\": \"Apple\",\n    \"size\": \"Large\",\n    \"color\": \"Red\"\n}";
         mFusedLocationClient.getLastLocation()
                 .addOnCompleteListener(this, new OnCompleteListener<Location>() {
                     @Override

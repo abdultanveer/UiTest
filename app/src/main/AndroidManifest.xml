@@ -32,17 +32,19 @@
         <activity
             android:name=".democp.MapsActivity"
             android:label="@string/title_activity_maps">
+
+        </activity>
+        <activity android:name=".democp.LocationActivity">
+
+        </activity>
+        <activity android:name=".democp.SecondActivity" />
+        <activity android:name=".login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".democp.LocationActivity">
-
-        </activity>
-        <activity android:name=".democp.SecondActivity" />
-        <activity android:name=".login.LoginActivity"></activity>
         <activity android:name=".democp.DemoCpActivity"></activity>
         <activity android:name=".addedittask.AddEditTaskActivity" />
         <activity android:name=".main.MainActivity" />

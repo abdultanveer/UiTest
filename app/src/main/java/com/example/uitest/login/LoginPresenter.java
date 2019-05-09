@@ -2,6 +2,7 @@ package com.example.uitest.login;
 
 import com.example.uitest.data.Task;
 import com.example.uitest.data.source.TaskDataSource;
+import com.example.uitest.data.source.TaskRespository;
 import com.example.uitest.data.source.local.TaskLocalDataSource;
 
 public class LoginPresenter implements  LoginContract.Presenter ,
@@ -12,7 +13,8 @@ public class LoginPresenter implements  LoginContract.Presenter ,
     LoginContract.View view;
     public LoginPresenter(LoginActivity loginActivity) {
         view = loginActivity;
-        dataSource = new TaskLocalDataSource();
+        dataSource = new TaskRespository();
+                //new TaskLocalDataSource();
     }
 
     @Override

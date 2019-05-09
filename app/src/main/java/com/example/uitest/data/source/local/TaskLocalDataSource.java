@@ -9,7 +9,7 @@ public class TaskLocalDataSource implements TaskDataSource {
     @Override
     public void getTask(GetTaskCallback callback) {//3a
         //here my local datasource will query my db and return the data
-        Task task = new Task("rjt","apolis");
+        Task task = new Task("rjt-task repository","apolis");
         callback.onTaskLoaded(task);//4
     }
 }

@@ -13,7 +13,7 @@ public class LoginPresenter implements  LoginContract.Presenter ,
     LoginContract.View view;
     public LoginPresenter(LoginActivity loginActivity) {
         view = loginActivity;
-        dataSource = new TaskRespository();
+        dataSource = new TaskRespository(loginActivity);
                 //new TaskLocalDataSource();
     }
 

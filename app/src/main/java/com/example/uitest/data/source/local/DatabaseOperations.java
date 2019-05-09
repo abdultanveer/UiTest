@@ -37,7 +37,7 @@ public class DatabaseOperations {
     }
 
 
-    public String readRow(){
+    public Task readRow(){
         //select * from tasks;
        Cursor cursor = database.query(FeedReaderContract.TaskEntry.TABLE_NAME,
                 null,null,null,null,null,null);
@@ -50,7 +50,8 @@ public class DatabaseOperations {
        String title = cursor.getString(titleColIndex);
        String details = cursor.getString(detailsColIndex);
 
-       return title +"\n"+ details;
+      // return title +"\n"+ details;
+        return new Task(title,details);
     }
     public void updateRow(){}
     public void deleteRow(){}

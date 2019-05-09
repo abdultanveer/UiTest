@@ -1,6 +1,8 @@
 package com.example.uitest.data.source;
 
 
+import android.content.Context;
+
 import com.example.uitest.data.source.local.TaskLocalDataSource;
 
 /**
@@ -10,8 +12,8 @@ import com.example.uitest.data.source.local.TaskLocalDataSource;
  */
 public class TaskRespository implements TaskDataSource{
     TaskDataSource localTaskDataSource;
-    public TaskRespository() {
-        localTaskDataSource = new TaskLocalDataSource();
+    public TaskRespository(Context context) {
+        localTaskDataSource = new TaskLocalDataSource(context);
     }
 
     @Override

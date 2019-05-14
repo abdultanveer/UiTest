@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">UiTest</string>
     <string name="latitude_label">latitude</string>
     <string name="longitude_label">longitude</string>
@@ -7,4 +7,8 @@
     <string name="settings">setting</string>
     <string name="no_location_detected">no location detected</string>
     <string name="title_activity_maps">Map</string>
+
+    <string name="facebook_app_id" tools:ignore="ExtraTranslation">2104908719578581</string>
+    <string name="fb_login_protocol_scheme">fb2104908719578581</string>
+
 </resources>
